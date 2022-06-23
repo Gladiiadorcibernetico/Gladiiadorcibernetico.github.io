@@ -1,5 +1,5 @@
-let personajes = [
 
+let personajes = [
     {
            nombre: "Golem",
            descripcion: "Es lento, pero persistente, y solo ataca las estructuras. Cuando se destruye, explota y se convierte en dos golemitas que infligen daño en área. Gólem es una carta de rareza épica de Clash Royale que puede obtenerse a partir de la arena 3.",
@@ -73,6 +73,7 @@ let personajes = [
    
 
 
+
 contador = 0 ;
 
 
@@ -91,12 +92,13 @@ let vol = document.createElement("h4");
 
 const seccion = document.getElementById("div");
 
-
+let contadorAct = localStorage.getItem("contador")
+       let contadorActiv = JSON.parse(contadorAct)
 
 //Imageninicial
-nombr.textContent = (`${personajes[contador].nombre}`);
+nombr.textContent = (`${personajes[contadorActiv].nombre}`);
 
-image.setAttribute('src', personajes[contador].imagen);
+image.setAttribute('src', personajes[contadorActiv].imagen);
 image.setAttribute('alt', "p");
 
 seccion.appendChild(image);
@@ -104,7 +106,7 @@ seccion.appendChild(nombr);
 
 
 
-parraf.textContent = (convArreglo[contador].descripcion);
+parraf.textContent = (convArreglo[contadorActiv].descripcion);
 
 
 

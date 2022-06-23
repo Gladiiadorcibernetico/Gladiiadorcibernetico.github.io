@@ -1,0 +1,94 @@
+{
+  "productos": [
+    {
+      "titulo": "Nike Air Force 1 Custom Low Pastel Shoes Purple Yellow Blue Green Pink All Sizes",
+      "condition": "New in Box",
+      "imagen": "https://i.pinimg.com/736x/8e/08/e0/8e08e0b36e73fb5d93284683b8d02fd3.jpg",
+      "precio": "$129.999",
+      "color": "white",
+      "id": 0
+    },
+    {
+      "titulo": "Zapatos de fiesta",
+      "condition": "New in Box",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_610398-MCO48988086217_012022-W.jpg",
+      "precio": "$228.999",
+      "id": 1
+    },
+    {
+      "titulo": "[H01014] Mens Adidas UltraBOOST 5.0 DNA",
+      "condition": "New in Box",
+      "imagen": "https://i.blogs.es/02539c/28xp-shoes-05-superjumbo/450_1000.jpeg",
+      "precio": "$428.999",
+      "color": "red",
+      "id": 2
+    },
+    {
+      "titulo": "[EG0691] Mens Adidas ULTRABOOST 20",
+      "condition": "New in Box",
+      "imagen": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/zapatillas-running-adidas-adizero-boston-8-1605017961.jpg?crop=1xw:1xh;center,top&resize=480:*",
+      "precio": "$374.999",
+      "color": "blue",
+      "id": 3
+    },
+    {
+      "titulo": "Men Adidas UltraBOOST 4.0 DNA",
+      "condition": "New in Box",
+      "imagen": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/194453/11/sv01/fnd/CHL/w/320/h/320/fmt/png",
+      "precio": "$374.999",
+      "color": "white",
+      "id": 4
+    }
+  ],
+  "carrito": [
+    [
+      {
+        "titulo": "Zapatos de fiesta",
+        "condition": "New in Box",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_610398-MCO48988086217_012022-W.jpg",
+        "precio": "$228.999",
+        "id": 1
+      }
+    ],
+    [
+      {
+        "titulo": "Nike Air Force 1 Custom Low Pastel Shoes Purple Yellow Blue Green Pink All Sizes",
+        "condition": "New in Box",
+        "imagen": "https://i.pinimg.com/736x/8e/08/e0/8e08e0b36e73fb5d93284683b8d02fd3.jpg",
+        "precio": "$129.999",
+        "color": "white",
+        "id": 0
+      }
+    ],
+    [
+      {
+        "titulo": "[H01014] Mens Adidas UltraBOOST 5.0 DNA",
+        "condition": "New in Box",
+        "imagen": "https://i.blogs.es/02539c/28xp-shoes-05-superjumbo/450_1000.jpeg",
+        "precio": "$428.999",
+        "color": "red",
+        "id": 2
+      }
+    ],
+    [
+      {
+        "titulo": "Men Adidas UltraBOOST 4.0 DNA",
+        "condition": "New in Box",
+        "imagen": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/194453/11/sv01/fnd/CHL/w/320/h/320/fmt/png",
+        "precio": "$374.999",
+        "color": "white",
+        "id": 4
+      }
+    ],
+    [
+      {
+        "titulo": "[EG0691] Mens Adidas ULTRABOOST 20",
+        "condition": "New in Box",
+        "imagen": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/zapatillas-running-adidas-adizero-boston-8-1605017961.jpg?crop=1xw:1xh;center,top&resize=480:*",
+        "precio": "$374.999",
+        "color": "blue",
+        "id": 3
+      }
+    ]
+  ]
+}

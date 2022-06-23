@@ -71,9 +71,12 @@ let personajes = [
  
 ]
 
-let contador = 0;
+let contador = 0
 
- 
+document.addEventListener('DOMContentLoaded' , ()=>{
+        localStorage.setItem('contador', JSON.stringify(contador));
+
+} )
 
 localStorage.setItem("arreglo", JSON.stringify(personajes));
 const get = localStorage.getItem("arreglo");
@@ -82,16 +85,16 @@ const conv = JSON.parse(get);
 
 
 
-let nombre = document.createElement("h3");
-let imagen = document.createElement("img");
+let nomb = document.createElement("h3");
+let imag = document.createElement("img");
 let parrafo = document.getElementById("p");
 let volv = document.createElement("h4");
 
 
 
-const seccion = document.getElementById("div");
-const btni = document.getElementById("btnI");
-const btnd = document.getElementById("btnD");
+const seccion = document.querySelector("#div");
+const btni = document.querySelector("#btnI");
+const btnd = document.querySelector("#btnD");
  
 
 
@@ -99,13 +102,13 @@ const btnd = document.getElementById("btnD");
 
 
 //Imageninicial
-nombre.textContent = (`${personajes[0].nombre}`);
+nomb.textContent = (`${personajes[0].nombre}`);
 
-imagen.setAttribute('src', personajes[0].imagen);
-imagen.setAttribute('alt', "p");
+imag.setAttribute('src', personajes[0].imagen);
+imag.setAttribute('alt', "p");
 
-seccion.appendChild(imagen);
-seccion.appendChild(nombre);
+seccion.appendChild(imag);
+seccion.appendChild(nomb);
 
 
 
@@ -146,15 +149,21 @@ if(contador >= 1){
                 //
 btni.addEventListener('click', accionI);
 
-function accionI(){
-        
+
+
+function accionI(){        
        contador -- ;
        
+       localStorage.setItem('contador', JSON.stringify(contador));
+       let contadorAct = localStorage.getItem("contador")
+       let contadorActiv = JSON.parse(contadorAct)
+      
 
        if(contador < 10 ){
+        const  {imagen, nombre} = personajes[contadorAct]
        
-        imagen.setAttribute('src', personajes[contador].imagen);
-        nombre.textContent = (`${personajes[contador].nombre}`);
+        imag.setAttribute('src', imagen);
+        nomb.textContent = (`${nombre}`);
 }
  
 }  
@@ -172,13 +181,16 @@ function accionI(){
  function accionD(){
        
         contador ++;
-        
+        localStorage.setItem('contador', JSON.stringify(contador));
  
-        
+        let contadorAct = localStorage.getItem("contador")
+        let contadorActiv = JSON.parse(contadorAct)
         if(contador < 10 ){
         
-imagen.setAttribute('src', personajes[contador].imagen);
-nombre.textContent = (`${personajes[contador].nombre}`);
+                const  {imagen, nombre} = personajes[contadorAct]
+       
+                imag.setAttribute('src', imagen);
+                nomb.textContent = (`${nombre}`);
 
 
 }
@@ -187,7 +199,7 @@ nombre.textContent = (`${personajes[contador].nombre}`);
 
 
 
-nombre.addEventListener('click', despliegueEfectivo );
+nomb.addEventListener('click', despliegueEfectivo );
 
 
 // Despsliegue nombre click
@@ -196,12 +208,8 @@ nombre.addEventListener('click', despliegueEfectivo );
 
 function despliegueEfectivo(){
         
-    
-        location.href = "2.html"
-        
-        
-        btni.disabled = true;
 
+        location.href = "2.html"
         
 } 
    
@@ -213,6 +221,6 @@ volv.addEventListener('click', transicionReturn);
 
         
         function transicionReturn() { 
-                alert("escuchado");
+               
        // location.href = "2.html";
 }

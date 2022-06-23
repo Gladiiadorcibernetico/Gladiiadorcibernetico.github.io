@@ -1,0 +1,169 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.cuerpo3{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+    grid-template-rows: 18vh 18vh 18vh 18vh 18vh 18vh 18vh 18vh 18vh 18vh 18vh ;
+    grid-gap: 2vh;
+}
+
+
+.buscador3{
+    display:grid;
+    height: 144px;
+    background-color: #184A81;
+    grid-column: 1/20;
+    grid-row: 1/2;
+
+
+}
+
+.principal3{
+   
+    grid-column: 3/9;
+    grid-row: 1/2;
+    height: 58px;
+    width: 106px;
+    margin-top: 4vh;
+  
+}
+
+
+.barra3{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 764px;
+    height: 36px;
+    left: 324px;
+    top: 30px;
+  
+   
+}
+
+#input3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 20px;
+    gap: 10px;
+    grid-column: 6/15;
+    grid-row: 1/1;
+    width: 493px;
+    height: 36px;
+    z-index: 1;
+   
+}
+
+
+.all3{
+    display:flex;
+flex-direction: row;
+align-items: center;
+padding: 1px 10px;
+position: relative;
+
+width: 150px;
+height: 36px;
+
+/* brand/blue */
+color: #FFFFFF;
+background: #184A81;
+
+/* Inside auto layout */
+grid-column: 4/5;
+grid-row: 1/1;
+
+border: 1px solid #E6E8EA;
+border-radius: 24px;
+z-index: 3;
+}
+
+.contenedorIconos3{
+    grid-column: 14/17;
+    grid-row: 1/1;
+    margin-top: 5vh;
+    
+    
+    
+      
+}
+
+.iconoWhite3{
+    grid-gap: 4vh;
+   
+}
+
+
+
+
+
+.contenedorProducto{
+    display: block;
+    position: center;
+    width: 600px;
+    height: 30vh;
+    margin-left: 100PX;
+    margin-top: 100px;
+    box-shadow: 1.5px -1.5px ,-1.5px 1.5px  ;
+   
+}
+
+.imgProducto{
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 1.5px -1.5px ,-1.5px 1.5px  ;
+}
+
+.producto{
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-top: -140px;
+    margin-left: 250px;
+   
+}
+.estado{
+    display: flex;
+    position: absolute;
+    width: 80vh;
+    height: 50vh;
+    margin-left: 250PX;
+    margin-top:180px;
+}
+
+.precio{
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 160px;
+    margin-left: 650px;
+}
+
+
+#remove{
+    display: flex;
+    margin-left: 1050px;
+    margin-top: -100px;
+    grid-row: 3/3;
+    background-color: aqua;
+}
