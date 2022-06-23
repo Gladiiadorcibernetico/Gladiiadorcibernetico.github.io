@@ -94,11 +94,11 @@ const seccion = document.getElementById("div");
 
 let contadorAct = localStorage.getItem("contador")
        let contadorActiv = JSON.parse(contadorAct)
-
+const  {imagen, nombre} = personajes[contadorAct]
 //Imageninicial
-nombr.textContent = (`${personajes[contadorActiv].nombre}`);
+nombr.textContent = (`${nombre}`);
 
-image.setAttribute('src', personajes[contadorActiv].imagen);
+image.setAttribute('src', imagen);
 image.setAttribute('alt', "p");
 
 seccion.appendChild(image);

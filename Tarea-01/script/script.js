@@ -71,7 +71,11 @@ let personajes = [
  
 ]
 
+
+
 let contador = 0
+
+
 
 document.addEventListener('DOMContentLoaded' , ()=>{
         localStorage.setItem('contador', JSON.stringify(contador));
@@ -81,6 +85,10 @@ document.addEventListener('DOMContentLoaded' , ()=>{
 localStorage.setItem("arreglo", JSON.stringify(personajes));
 const get = localStorage.getItem("arreglo");
 const conv = JSON.parse(get);
+let contadorAct = localStorage.getItem("contador")
+const  {imagen, nombre} = personajes[contadorAct]
+
+
 
 
 
@@ -102,9 +110,9 @@ const btnd = document.querySelector("#btnD");
 
 
 //Imageninicial
-nomb.textContent = (`${personajes[0].nombre}`);
+nomb.textContent = (`${nombre}`);
 
-imag.setAttribute('src', personajes[0].imagen);
+imag.setAttribute('src', imagen);
 imag.setAttribute('alt', "p");
 
 seccion.appendChild(imag);
